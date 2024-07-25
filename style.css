@@ -79,7 +79,7 @@ body {
     border-bottom: 3px solid var(--main-color);
 }
 
-#menu-icon {
+.header img {
     /* font-size: 3.6rem; */
     height: 50px;
     width: 50px;
@@ -127,8 +127,8 @@ span {
 .home-content h3 {
     font-size: 3.5rem;
     font-weight: 700;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
     opacity: 0;
     animation: slideBottom 1s ease forwards;
     animation-delay: .7s;
@@ -144,7 +144,7 @@ span {
     font-size: 20px;
     font-weight: 700;
     margin-top: 1.5rem;
-    line-height: 1;
+    line-height: 0.5;
     opacity: 0;
     animation: slideRight 1s ease forwards;
     animation-delay: 1s;
@@ -457,23 +457,24 @@ span {
     background-color: var(--bg-color);
     width: 50px;
 }
-.about {
+/* .about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 15px;
     background-color: var(--bg-color);
-}
+} */
 
-.about-img img {
+/* .about-img img {
     padding-bottom: 20%;
     max-width: 630px;
     height: auto;
     border: 8px;
-}
+} */
 
 .about-text h2 {
-    font-size: 60px;
+    font-size: 65px;
+    text-align: center;
 }
 
 .about-text h2 span {
@@ -485,11 +486,11 @@ span {
     font-weight: 600;
     color: #fff;
     line-height: 1.7s;
-    margin: 15px 0 30px;
+    margin: auto;
 }
 
 .about-text p {
-    font-size: 20px;
+    font-size: 25px;
     color: aliceblue;
     line-height: 1.7;
     margin-bottom: 4rem;
@@ -752,7 +753,58 @@ span {
         grid-template-columns: repeat(1,1fr);
     }
 }
-
+@media(max-width:326px){
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 25%;
+        padding: 1rem 3%;
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(20px);
+        border-top-left-radius: 2rem;
+        border-left: 2px solid var(--main-color);
+    }
+    .navbar{
+        display: none;
+    }
+    .navbar-active{
+        display: block;
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        color: white;
+    }
+    .home{
+        flex-direction: column-reverse;
+        margin: 5rem 4rem;
+    }
+    .home-content h3{
+        font-size: 2.6rem;
+    }
+    .home-content h1{
+        font-size: 8rem;
+        margin-top: 3rem;
+    }
+    .home-content p{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .home-img img{
+        width: 30vw;
+    }
+    .services h2{
+        margin-bottom: 3rem;
+    }
+    .services-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
 /* .sub-title {
     text-align: center;
     font-size: 60px;
