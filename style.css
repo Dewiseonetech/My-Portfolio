@@ -754,17 +754,17 @@ span {
         margin-bottom: 3rem;
     }
     .service-info h4{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     .service-info p{
-        font-size: 1rem;
+        font-size: 0.5rem;
     }
     .services-container{
         grid-template-columns: repeat(1,1fr);
         font-size: 0.5rem;
     }
     .about-text p{
-        font-size: 3rem;
+        font-size: 2rem;
     }
 }
 @media(max-width:326px){
