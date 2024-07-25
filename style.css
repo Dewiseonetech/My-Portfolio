@@ -746,15 +746,19 @@ span {
     .home-img img{
         width: 56vw;
     }
+    .home-sci a{
+        height: 20px;
+        width: 20px;
+    }
     .services h2{
         margin-bottom: 3rem;
     }
     .services-container{
         grid-template-columns: repeat(1,1fr);
-        font-size: 2rem;
+        font-size: 0.5rem;
     }
     .about-text p{
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 }
 @media(max-width:326px){
