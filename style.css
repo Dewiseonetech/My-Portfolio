@@ -751,6 +751,10 @@ span {
     }
     .services-container{
         grid-template-columns: repeat(1,1fr);
+        font-size: 2rem;
+    }
+    .about-text p{
+        font-size: 4rem;
     }
 }
 @media(max-width:326px){
