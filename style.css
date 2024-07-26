@@ -60,7 +60,7 @@ body {
 }
 #menu-icon{
     font-size: 25px;
-    background-image: url(menu.png);
+    background-image: url(dots-menu.png);
 }
 .navbar a {
     display: inline-block;
