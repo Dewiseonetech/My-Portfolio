@@ -61,6 +61,8 @@ body {
 #menu-icon{
     font-size: 25px;
     background-image: url(list.png);
+    width: 25px;
+    height: 25px;
 }
 .navbar a {
     display: inline-block;
