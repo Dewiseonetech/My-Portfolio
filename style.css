@@ -58,7 +58,12 @@ body {
 .logo span {
     text-shadow: 0 0 25px var(--main-color);
 }
-
+#menu-icon{
+    font-size: 25px;
+    background-image: url(list.png);
+    width: 25px;
+    height: 25px;
+}
 .navbar a {
     display: inline-block;
     font-size: 1.8rem;
@@ -79,7 +84,7 @@ body {
     border-bottom: 3px solid var(--main-color);
 }
 
-#menu-icon {
+.header img {
     /* font-size: 3.6rem; */
     height: 50px;
     width: 50px;
@@ -127,8 +132,8 @@ span {
 .home-content h3 {
     font-size: 3.5rem;
     font-weight: 700;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-top: 9rem;
+    margin-bottom: 1rem;
     opacity: 0;
     animation: slideBottom 1s ease forwards;
     animation-delay: .7s;
@@ -144,7 +149,7 @@ span {
     font-size: 20px;
     font-weight: 700;
     margin-top: 1.5rem;
-    line-height: 1;
+    line-height: 0.5;
     opacity: 0;
     animation: slideRight 1s ease forwards;
     animation-delay: 1s;
@@ -457,23 +462,24 @@ span {
     background-color: var(--bg-color);
     width: 50px;
 }
-.about {
+/* .about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 15px;
     background-color: var(--bg-color);
-}
+} */
 
-.about-img img {
+/* .about-img img {
     padding-bottom: 20%;
     max-width: 630px;
     height: auto;
     border: 8px;
-}
+} */
 
 .about-text h2 {
-    font-size: 60px;
+    font-size: 65px;
+    text-align: center;
 }
 
 .about-text h2 span {
@@ -485,11 +491,11 @@ span {
     font-weight: 600;
     color: #fff;
     line-height: 1.7s;
-    margin: 15px 0 30px;
+    margin: auto;
 }
 
 .about-text p {
-    font-size: 20px;
+    font-size: 25px;
     color: aliceblue;
     line-height: 1.7;
     margin-bottom: 4rem;
@@ -691,7 +697,7 @@ span {
         left: 0;
     }
     .services{
-        padding-bottom: 7rem;
+        padding-bottom: 3rem;
     }
     .contact form{
         flex-direction: column;
@@ -745,14 +751,106 @@ span {
     .home-img img{
         width: 56vw;
     }
+    .home-sci img{
+        height: 4.5rem;
+        width: 4.5rem;
+    }
+    .service-box{
+        width: fit-content;
+        height: fit-content;
+    }
+    .services h2{
+        margin-bottom: 3rem;
+    }
+    .service-info h4{
+        font-size: 1.7rem;
+        margin-top: -20px;
+    }
+    .service-info p{
+        font-size: 1rem;
+    }
+    .service-info1 h4{
+        font-size: 1.5rem;
+        /* margin-top: -10px; */
+    }
+    .service-info1 p{
+        font-size: 0.8rem;
+    }
+    .services-container{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    .about-text p{
+        font-size: 2rem;
+    }
+    .text-animation{
+        font-size: 15px;
+    }
+    .text-animation span{
+        font-size: 15px;
+    }
+    .designs{
+        margin: auto;
+    }
+    .uploads{
+        justify-content: center;
+    }
+}
+@media(max-width:326px){
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 25%;
+        padding: 1rem 3%;
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(20px);
+        border-top-left-radius: 2rem;
+        border-left: 2px solid var(--main-color);
+    }
+    .navbar{
+        display: none;
+    }
+    .navbar-active{
+        display: block;
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        color: white;
+    }
+    .home{
+        flex-direction: column-reverse;
+        margin: 5rem 4rem;
+    }
+    .home-content h3{
+        font-size: 2.6rem;
+    }
+    .home-content h1{
+        font-size: 8rem;
+        margin-top: 3rem;
+    }
+    .home-content p{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .home-img img{
+        width: 30vw;
+    }
     .services h2{
         margin-bottom: 3rem;
     }
     .services-container{
         grid-template-columns: repeat(1,1fr);
     }
+    .uploads{
+        align-items: center;
+    }
 }
-
 /* .sub-title {
     text-align: center;
     font-size: 60px;
@@ -881,4 +979,56 @@ span {
         transform: translateX(0px);
         opacity: 1;
     }
+}
+.designs {
+    background-color: var(--bg-color);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    /* font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem; */
+}
+.heading{
+    font-size: 8rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+.heading h2{
+    margin-bottom: 5rem;
+    color: white;
+}
+.uploads{
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+}
+.images{
+    background-color: var(--main-color);
+    height: 260px;
+    width: 260px;
+    border-radius: 3rem;
+    border: 5px solid transparent;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.images img{
+    height: 250px;
+    width: 250px;
+    border-radius: 25px;
+   
+}
+.images video{
+    height: 250px;
+    width: 250px;
+    border-radius: 25px;
+   
+}
+.images:hover{
+    background: white;
+    color: black;
+    border: 5px solid var(--main-color);
+    transform: scale(1.2);
 }
