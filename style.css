@@ -552,10 +552,10 @@ span {
 }
 .service-info1 h4{
     font-size: 2.5rem;
-    font-weight: 1000;
-    line-height: 1.5;
+    font-weight: 800;
+    line-height: 2;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .service-info p{
     font-size: 1.6rem;
@@ -565,11 +565,12 @@ span {
     margin: auto;
 }
 .service-info1 p{
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 1.6rem;
+    font-weight: 600;
     max-height: 100px;
     line-height: 1.7;
     text-align: center;
+    margin-top: 20px;
 }
 .contact{
     background-color: var(--bg-color);
