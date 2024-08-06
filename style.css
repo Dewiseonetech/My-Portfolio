@@ -545,17 +545,26 @@ span {
     align-items: baseline;
     padding: 5rem 5rem;
 }
+.service-box .service-info1{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-height: 200px;
+    justify-content: left;
+    align-items: baseline;
+    padding: 5rem 5rem;
+}
 .service-info h4{
     font-size: 3rem;
     font-weight: 800;
     line-height: 2;
 }
 .service-info1 h4{
-    font-size: 2rem;
+    font-size: 2.1rem;
     font-weight: 800;
-    line-height: 2;
+    line-height: 1.5;
     text-align: center;
-    margin-top: 30px;
+    margin-top: -10px;
 }
 .service-info p{
     font-size: 1.6rem;
@@ -768,14 +777,16 @@ span {
         margin-top: -20px;
     }
     .service-info p{
-        font-size: 1rem;
+        font-size: 1.2rem;
+        margin-top: 10px;
     }
     .service-info1 h4{
-        font-size: 1.5rem;
-        /* margin-top: -10px; */
+        font-size: 1.7rem;
+        margin-top: -20px;
     }
     .service-info1 p{
-        font-size: 0.8rem;
+        font-size: 1.2rem;
+        margin-top: 10px;
     }
     .services-container{
         grid-template-columns: repeat(1,1fr);
