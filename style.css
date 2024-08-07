@@ -777,15 +777,15 @@ span {
         margin-top: -20px;
     }
     .service-info p{
-        font-size: 1.2rem;
-        margin-top: 10px;
+        font-size: 1rem;
+        /* margin-top: 10px; */
     }
     .service-info1 h4{
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         margin-top: -20px;
     }
     .service-info1 p{
-        font-size: 1.2rem;
+        font-size: 0.9rem;
         margin-top: 10px;
     }
     .services-container{
